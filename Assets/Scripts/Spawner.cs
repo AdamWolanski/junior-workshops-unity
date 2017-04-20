@@ -9,9 +9,10 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private GameObject _altBoxPrefabGameObject;
 
-    void Awake()
+
+    public void SpawnBox()
     {
-        
+        Instantiate(_altBoxPrefabGameObject, this.transform.position, Quaternion.identity);
     }
 
 	// Use this for initialization
